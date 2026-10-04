@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>旅行攻略 · 中国10大热门景点</title>
+  <meta name="description" content="精选中国10大热门旅行景点，提供交通、门票、住宿、美食、行程与避坑的深度攻略。" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><span class="logo">🧭</span><span>旅行攻略</span></a>
+      <nav class="nav">
+        <a href="index.html" class="brand-link">首页</a>
+        <a href="index.html#attractions">全部景点</a>
+        <a href="about.html">关于</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>中国 10 大热门旅行景点攻略</h1>
+      <p>一站式获取出行前所需的实用信息：交通、门票、住宿、美食、行程路线与避坑指南。让每一次出发都更从容。</p>
+      <div class="stats">
+        <div><b id="stat-count">10</b>精选景点</div>
+        <div><b>13</b>攻略模块</div>
+        <div><b>7</b>覆盖区域</div>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="controls" id="attractions">
+      <label class="search">
+        <span>🔍</span>
+        <input id="search-input" type="text" placeholder="搜索景点名 / 城市，如 故宫、杭州…" />
+      </label>
+      <div class="region-tabs" id="region-tabs"></div>
+    </div>
+    <div class="grid" id="card-grid"></div>
+    <div class="empty" id="empty" style="display:none">没有匹配的景点，换个关键词试试～</div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>旅行攻略 · 数据仅供参考，门票/开放时间以官方发布为准。</p>
+      <p>© 2026 trip · 由热爱旅行的人维护 · <a href="about.html">关于本站</a></p>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/home.js"></script>
+</body>
+</html>
